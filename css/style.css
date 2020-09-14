@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: normal 20px Arial, sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body {
+  background: url(https://storge.pic2.me/upload/897/5beca81ac7d49.jpg) center / cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator {
+  width: 325px;
+  height: auto;
+  overflow:hidden;
+  padding: 20px 20px 10px;
+  position:relative;
+  background: rgba(243, 149, 162, 0.7);
+  border-radius: 15px;
+  box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.2);  
+}
+
+.top span.clear {
+  position:absolute;
+  z-index:60;
+}
+
+
+.top .total {
+  height: 75px;
+  width: 100%;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 27px;
+  font-weight:normal;
+  color: white;
+  text-align: right;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.keys, .top {
+  overflow: hidden;
+}
+.keys span, .top span.clear {
+  float: left;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  width: 66px;
+  height: 56px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 3px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 7px 11px 0;
+  
+  color: #ccc;
+  line-height: 56px;
+  text-align: center;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.keys span.operator {
+  background: rgba(240, 108, 75, 0.7);
+  margin-right: 0;
+  font-size: 25px;     
+}
+
+.keys span.eval {
+  font-weight: bold;
+  background: rgba(43, 38, 58, 0.8);
+  color: #ffffff;
+}
+
+.top span.clear {
+  background: transparent;
+  box-shadow: none;
+  color: #aaa;
+  width:56px;
+  top: 10px;
+  left:7px;
+}
+
+.keys span:hover {
+  background: rgba(255,255,255,0.8);
+  color: #333;
+}
+
+.keys span.eval:hover {
+  background: rgb(43, 38, 58);
+  color: #ffffff;
+}
+
+.top span.clear:hover {
+  border-radius:20px;
+  background: rgba(0,0,0,0.1);
+  color: white;
+}
+
+.keys span:active {
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+  top: 7px;
+}
